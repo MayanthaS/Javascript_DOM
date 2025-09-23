@@ -73,6 +73,7 @@ for(var i of items){
 }*/
 
 //--select elements using tag name --
+/*
 var li = document.getElementsByTagName('li');
 console.log(li);
 console.log(li[0]);
@@ -85,7 +86,7 @@ li[2].style.color ='#fff';
 for(var i of li){
     i.style.backgroundColor ="#ebca14";
 }
-
+*/
 
 // query selector
 
@@ -97,3 +98,11 @@ hd.style.border ='solid 1px #000';
 var input = document.querySelector('input');
 input.style.backgroundColor ="#ebca14";
 input.value ='paintbucket';
+
+//--class 
+var item = document.querySelector(".items");
+item.style.backgroundColor ="#ebca14";
+
+//option-tag
+var input = document.querySelector("option");
+input.style.backgroundColor="#ebca14"
