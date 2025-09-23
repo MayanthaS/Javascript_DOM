@@ -106,7 +106,7 @@ item.style.backgroundColor ="#ebca14";
 //option-tag
 var input = document.querySelector("option");
 input.style.backgroundColor="#ebca14";
-*/
+
 
 //mix select
 var it = document.querySelector('div .frm #frmt');
@@ -126,3 +126,16 @@ console.log(cl);
 //--mix selctors
 var mx = document.querySelectorAll('div .list li');
 console.log(mx);
+*/
+// pseudo classses
+// Graball the odd  list item
+var odd =document.querySelectorAll('li:nth-child(odd)');
+var even =document.querySelectorAll('li:nth-child(even)');  
+console.log(odd);
+console.log(even);
+for(var i of odd){
+    i.style.backgroundColor ="#ebca14";
+}
+for(var i of even){
+    i.style.backgroundColor ="#000a9dff";
+}
