@@ -48,3 +48,5 @@ console.log(formTtile);
 formTtile.innerText ="Add shopping Items";
 //console.log(formTtile.textContent);
 console.log(formTtile.innerText);
+
+formTtile.innerHTML ="<i>Hello </i> ADD_ITEMS";
