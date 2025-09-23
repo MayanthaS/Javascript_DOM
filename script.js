@@ -66,3 +66,8 @@ console.log(items[2]);
 //styling 
 items[2].style.fontFamily ='serif';
 items[2].style.backgroundColor='#ebca14';
+
+//--change back color of all the list items--
+for(var i of items){
+    i.style.backgroundColor ='#a7520c';
+}
