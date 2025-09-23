@@ -81,3 +81,10 @@ li[2].textContent= 'Book';
 //--styling
 li[2].style.backgroundColor = "#ebca14";
 li[2].style.color ='#fff';
+//--change color backk all 
+for(var i of li){
+    i.style.backgroundColor ="#ebca14";
+}
+
+
+// query selector
