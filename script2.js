@@ -1,0 +1,39 @@
+//traversing the dom--
+
+ var itemList = document.querySelector('#li-items');
+
+ //parent node
+    console.log(itemList.parentNode);
+    itemList.parentNode.style.backgroundColor = "#afafaf";
+
+    console.log(itemList.parentNode.parentNode);
+
+
+
+
+//Parent Element
+
+//Most of the time similar to parent NODE
+console.log(itemList.parentElement);
+itemList.parentElement.style.backgroundColor ='#6f6f6f';
+console.log(itemList.parentElement.parentElement);
+
+//child node
+console.log(itemList.childNodes); 
+
+//children --
+console.log(itemList.children);
+console.log(itemList.children[2].textContent);
+itemList.children[2].style.backgroundColor ='#ebca14';
+
+//--first child
+//work like childnodes
+console.log(itemList.firstChild);
+
+//---First Element child
+console.log(itemList.firstElementChild);
+itemList.firstElementChild.style.backgroundColor ='#ebca14';
+
+//--last Element child
+console.log(itemList.lastElementChild);
+itemList.lastElementChild.style.backgroundColor ='#ebca14';

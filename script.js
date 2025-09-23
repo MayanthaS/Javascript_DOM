@@ -89,7 +89,7 @@ for(var i of li){
 */
 
 // query selector
-
+/*
 //--    ID---
 var hd = document.querySelector('#navbar');
 hd.style.border ='solid 1px #000';
@@ -105,4 +105,38 @@ item.style.backgroundColor ="#ebca14";
 
 //option-tag
 var input = document.querySelector("option");
-input.style.backgroundColor="#ebca14"
+input.style.backgroundColor="#ebca14";
+
+
+//mix select
+var it = document.querySelector('div .frm #frmt');
+it.style.color ="#ebca14";
+
+//--select element using query selector  all
+//--ID
+var hd = document.querySelectorAll('#hdt');
+console.log(hd);
+//--tag
+var dv = document.querySelectorAll('div');
+console.log(dv);
+//--class
+var cl = document.querySelectorAll('.items');
+console.log(cl);
+
+//--mix selctors
+var mx = document.querySelectorAll('div .list li');
+console.log(mx);
+
+// pseudo classses
+// Graball the odd  list item
+var odd =document.querySelectorAll('li:nth-child(odd)');
+var even =document.querySelectorAll('li:nth-child(even)');  
+console.log(odd);
+console.log(even);
+for(var i of odd){
+    i.style.backgroundColor ="#ebca14";
+}
+for(var i of even){
+    i.style.backgroundColor ="#000a9dff";
+}
+    */
