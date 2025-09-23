@@ -89,7 +89,7 @@ for(var i of li){
 */
 
 // query selector
-
+/*
 //--    ID---
 var hd = document.querySelector('#navbar');
 hd.style.border ='solid 1px #000';
@@ -105,4 +105,9 @@ item.style.backgroundColor ="#ebca14";
 
 //option-tag
 var input = document.querySelector("option");
-input.style.backgroundColor="#ebca14"
+input.style.backgroundColor="#ebca14";
+*/
+
+//mix select
+var it = document.querySelector('div .frm #frmt');
+it.style.color ="#ebca14";
