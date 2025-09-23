@@ -111,3 +111,18 @@ input.style.backgroundColor="#ebca14";
 //mix select
 var it = document.querySelector('div .frm #frmt');
 it.style.color ="#ebca14";
+
+//--select element using query selector  all
+//--ID
+var hd = document.querySelectorAll('#hdt');
+console.log(hd);
+//--tag
+var dv = document.querySelectorAll('div');
+console.log(dv);
+//--class
+var cl = document.querySelectorAll('.items');
+console.log(cl);
+
+//--mix selctors
+var mx = document.querySelectorAll('div .list li');
+console.log(mx);
