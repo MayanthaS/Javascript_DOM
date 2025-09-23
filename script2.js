@@ -20,3 +20,20 @@ console.log(itemList.parentElement.parentElement);
 
 //child node
 console.log(itemList.childNodes); 
+
+//children --
+console.log(itemList.children);
+console.log(itemList.children[2].textContent);
+itemList.children[2].style.backgroundColor ='#ebca14';
+
+//--first child
+//work like childnodes
+console.log(itemList.firstChild);
+
+//---First Element child
+console.log(itemList.firstElementChild);
+itemList.firstElementChild.style.backgroundColor ='#ebca14';
+
+//--last Element child
+console.log(itemList.lastElementChild);
+itemList.lastElementChild.style.backgroundColor ='#ebca14';
