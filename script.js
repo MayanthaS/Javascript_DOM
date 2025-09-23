@@ -126,7 +126,7 @@ console.log(cl);
 //--mix selctors
 var mx = document.querySelectorAll('div .list li');
 console.log(mx);
-*/
+
 // pseudo classses
 // Graball the odd  list item
 var odd =document.querySelectorAll('li:nth-child(odd)');
@@ -139,3 +139,4 @@ for(var i of odd){
 for(var i of even){
     i.style.backgroundColor ="#000a9dff";
 }
+    */
