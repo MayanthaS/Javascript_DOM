@@ -88,3 +88,12 @@ for(var i of li){
 
 
 // query selector
+
+//--    ID---
+var hd = document.querySelector('#navbar');
+hd.style.border ='solid 1px #000';
+
+//--tag
+var input = document.querySelector('input');
+input.style.backgroundColor ="#ebca14";
+input.value ='paintbucket';
