@@ -50,7 +50,7 @@ formTtile.innerHTML ="<i>Hello </i> ADD_ITEMS";
 console.log(formTtile.textContent);
 console.log(formTtile.innerText);
 console.log(formTtile.innerHTML);
-*/
+
 //-styling
 var navigation = document.getElementById('navbar');
 navigation.style.backgroundColor ='#090209';
@@ -66,3 +66,25 @@ console.log(items[2]);
 //styling 
 items[2].style.fontFamily ='serif';
 items[2].style.backgroundColor='#ebca14';
+
+//--change back color of all the list items--
+for(var i of items){
+    i.style.backgroundColor ='#a7520c';
+}*/
+
+//--select elements using tag name --
+var li = document.getElementsByTagName('li');
+console.log(li);
+console.log(li[0]);
+li[2].textContent= 'Book';
+
+//--styling
+li[2].style.backgroundColor = "#ebca14";
+li[2].style.color ='#fff';
+//--change color backk all 
+for(var i of li){
+    i.style.backgroundColor ="#ebca14";
+}
+
+
+// query selector
