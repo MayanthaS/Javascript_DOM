@@ -44,9 +44,14 @@ console.log(formTtile);
 
 //--textContent,innertext and inner html
 
-//formTtile.textContent ="Add shopping Items";
+formTtile.textContent ="Add shopping Items";
 formTtile.innerText ="Add shopping Items";
-//console.log(formTtile.textContent);
-console.log(formTtile.innerText);
-
 formTtile.innerHTML ="<i>Hello </i> ADD_ITEMS";
+console.log(formTtile.textContent);
+console.log(formTtile.innerText);
+console.log(formTtile.innerHTML);
+
+//-styling
+var navigation = document.getElementById('navbar');
+navigation.style.backgroundColor ='#090209';
+navigation.style.color = 'white';
