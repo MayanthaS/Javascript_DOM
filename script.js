@@ -25,7 +25,7 @@ console.log(document.all);
 console.log(document.forms);
 console.log(document.links);
 console.log(document.images);
-*/
+
 //--change value
 console.log(document.title);
 document.title = "Document object Notation";
@@ -43,8 +43,26 @@ console.log(formTtile);
 
 
 //--textContent,innertext and inner html
-
-//formTtile.textContent ="Add shopping Items";
+/*
+formTtile.textContent ="Add shopping Items";
 formTtile.innerText ="Add shopping Items";
-//console.log(formTtile.textContent);
+formTtile.innerHTML ="<i>Hello </i> ADD_ITEMS";
+console.log(formTtile.textContent);
 console.log(formTtile.innerText);
+console.log(formTtile.innerHTML);
+*/
+//-styling
+var navigation = document.getElementById('navbar');
+navigation.style.backgroundColor ='#090209';
+navigation.style.color = 'white';
+
+//--select element using class name
+var items = document.getElementsByClassName('items');
+console.log(items);
+console.log(items[0]);
+items[2].textContent = 'Hand bag';
+console.log(items[2]);
+
+//styling 
+items[2].style.fontFamily ='serif';
+items[2].style.backgroundColor='#ebca14';
