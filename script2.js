@@ -56,7 +56,7 @@ console.log(itemList.previousSibling);
 
 console.log(itemList.previousElementSibling);
 itemList.previousElementSibling.style.backgroundColor =' #ebca14';
-*/
+
 
 
 //create element 
@@ -83,7 +83,7 @@ var newText = document.createTextNode('How are you!');
 //add text to div
 newDiv.appendChild(newText);
 console.log(newDiv);
-/*
+
 //insert element to the document
 var form = document.querySelector('.frm form');
 var button = document.querySelector('.frm form button');
@@ -91,4 +91,17 @@ var button = document.querySelector('.frm form button');
 input.style.backgroundColor = '#ebca14';
 
 form.insertBefore(input,button);
-*/
+
+
+//  usin internal events
+
+function btnclick(x){
+    alert(x);
+}
+    */
+
+// --Intergrated Function (anonymous function)---
+var button1 = document.getElementById('c-btn').addEventListener
+('click',function(){
+  alert("Button Clicked!");
+})
