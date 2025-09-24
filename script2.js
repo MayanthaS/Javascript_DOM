@@ -101,7 +101,13 @@ function btnclick(x){
     */
 
 // --Intergrated Function (anonymous function)---
+/*
 var button1 = document.getElementById('c-btn').addEventListener
 ('click',function(){
   alert("Button Clicked!");
+})
+*/
+var button1 = document.getElementById('c-btn').addEventListener
+('click',function(){
+    alert("clicked");
 })
