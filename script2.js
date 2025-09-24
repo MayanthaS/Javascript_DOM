@@ -188,4 +188,81 @@ document.getElementById('myDiv2').addEventListener('click',
     
 
 
+    // remove event listner
+    function myFunc(){
+        alert("Button has clicked");
+    }
 
+    //add 
+    document.getElementById('ev-btn').addEventListener('click',
+    myFunc );
+
+    //Remove
+    document.getElementById('rm-btn').addEventListener('click',
+        function(){
+            document.getElementById('ev-btn').removeEventListener
+            ('click',myFunc);
+            console.log("Event hav removed!");
+        }
+    )
+
+///different type of events
+var btn = document.getElementById('t-btn');
+var btn = document.getElementById('box');
+//click event
+ //btn.addEventListener('click',typeofEvent1);
+//double click event
+ //btn.addEventListener('dbclick',typeofEvent1);
+//mousedown
+//btn.addEventListener('mousedown',typeofEvent1);
+//btn.addEventListener('mouseenter',typeofEvent1);
+//btn.addEventListener('mouseleave',typeofEvent1);
+
+//btn.addEventListener('mouseover',typeofEvent1);
+/*
+btn.addEventListener('mousemove',typeofEvent1);
+function typeofEvent1(e){
+    console.log("Event type :" +e.type);
+
+    document.querySelector('#box h2').textContent ='Mouse X :' + e.offsetX + ' | Mouse Y :'+e.offsetY;
+
+    document.body.style.backgroundColor = 'rgb('+e.offsetX+','+e.offsetY+','+e.offsetX+')';
+}
+*/
+
+//---Diferent types of events for Keyboard---
+/*
+var keyInput = document.querySelector('input[type="text"]');
+
+//keyInput.addEventListener('keydown',typeofEvent2);
+//keyInput.addEventListener('keyup',typeofEvent2);
+//keyInput.addEventListener('keypress',typeofEvent2);
+//keyInput.addEventListener('focus',typeofEvent2);
+keyInput.addEventListener('input',typeofEvent2);
+function typeofEvent2(e){
+    console.log('Event type :'+e.type);
+    console.log('value :'+e.target.value);
+    document.getElementById('out').textContent = e.target.value;
+}
+    */
+
+
+//other diferent type of event
+//select
+var  select = document.querySelector('select');
+select.addEventListener('change',typeofEvent3);
+select.addEventListener('change',typeofEvent3);
+
+function typeofEvent3(e){
+    console.log("Event type :" +e.type);
+    console.log("value :" +e.target.value);
+}
+
+//form
+var form = document.querySelector('form');
+form.addEventListener('submit',typeofEvent4);
+
+function typeofEvent4(e){
+    e.preventDefault();
+    console.log("Event type :" +e.type);
+}
