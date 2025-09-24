@@ -83,3 +83,12 @@ var newText = document.createTextNode('How are you!');
 //add text to div
 newDiv.appendChild(newText);
 console.log(newDiv);
+/*
+//insert element to the document
+var form = document.querySelector('.frm form');
+var button = document.querySelector('.frm form button');
+
+input.style.backgroundColor = '#ebca14';
+
+form.insertBefore(input,button);
+*/
