@@ -111,3 +111,10 @@ var button1 = document.getElementById('c-btn').addEventListener
 ('click',function(){
     alert("clicked");
 })
+
+//--Named function--
+document.getElementById('c-btn').addEventListener('mouseout',textChange);
+function textChange(){
+    alert("Mouse out");
+    document.getElementById('c-btn').textContent ="Buy one";
+}
