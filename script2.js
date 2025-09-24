@@ -225,5 +225,7 @@ function typeofEvent1(e){
     console.log("Event type :" +e.type);
 
     document.querySelector('#box h2').textContent ='Mouse X :' + e.offsetX + ' | Mouse Y :'+e.offsetY;
+
+    document.body.style.backgroundColor = 'rgb('+e.offsetX+','+e.offsetY+','+e.offsetX+')';
 }
 
