@@ -188,4 +188,31 @@ document.getElementById('myDiv2').addEventListener('click',
     
 
 
+    // remove event listner
+    function myFunc(){
+        alert("Button has clicked");
+    }
+
+    //add 
+    document.getElementById('ev-btn').addEventListener('click',
+    myFunc );
+
+    //Remove
+    document.getElementById('rm-btn').addEventListener('click',
+        function(){
+            document.getElementById('ev-btn').removeEventListener
+            ('click',myFunc);
+            console.log("Event hav removed!");
+        }
+    )
+
+///different type of events
+var btn = document.getElementById('t-btn');
+btn.addEventListener('click',typeofEvent1);
+//btn.addEventListener('dbclick',typeofEvent1);
+
+
+function typeofEvent1(e){
+    console.log("Event type :" +e.type);
+}
 
