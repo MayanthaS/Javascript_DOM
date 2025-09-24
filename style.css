@@ -49,3 +49,14 @@ height: 30px;
  border-radius: 10px;
  margin-bottom: 2px;  
 }
+/*bubling and capturing */
+#myDiv1,#myDiv2{
+    background-color: coral;
+    padding: 50px;
+}
+#mypy1,#mypy2{
+    background-color: white;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 20xp;
+}

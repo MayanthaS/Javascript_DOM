@@ -56,7 +56,7 @@ console.log(itemList.previousSibling);
 
 console.log(itemList.previousElementSibling);
 itemList.previousElementSibling.style.backgroundColor =' #ebca14';
-*/
+
 
 
 //create element 
@@ -83,3 +83,109 @@ var newText = document.createTextNode('How are you!');
 //add text to div
 newDiv.appendChild(newText);
 console.log(newDiv);
+
+//insert element to the document
+var form = document.querySelector('.frm form');
+var button = document.querySelector('.frm form button');
+
+input.style.backgroundColor = '#ebca14';
+
+form.insertBefore(input,button);
+
+
+//  usin internal events
+
+function btnclick(x){
+    alert(x);
+}
+    */
+
+// --Intergrated Function (anonymous function)---
+/*
+var button1 = document.getElementById('c-btn').addEventListener
+('click',function(){
+  alert("Button Clicked!");
+})
+*/
+var button1 = document.getElementById('c-btn').addEventListener
+('click',function(){
+    alert("clicked");
+})
+
+//--Named function--
+document.getElementById('c-btn').addEventListener('mouseout',textChange);
+function textChange(){
+    alert("Mouse out");
+    document.getElementById('c-btn').textContent ="Buy one";
+}
+
+
+// --parameterized function
+document.getElementById('i-btn').addEventListener('click',
+    function(){
+        changeListBack("Hello");
+    });
+
+function changeListBack(x){
+    document.getElementById('li-items').style.backgroundColor ='#ebca14';
+    document.getElementById('li-items').firstElementChild.textContent = x;
+}
+
+//event parameter
+
+var button2 =document.getElementById('e-btn').addEventListener
+('click',clickbtn);
+
+function clickbtn(e){
+    console.log(e);
+    console.log(e.target);
+    console.log(e.target.id);
+    console.log(e.target.classList);
+    console.log(e.target.type);
+
+
+    //out put
+    /*
+var output = document.getElementById('output');
+output.innerHTML = '<h4>Class name : ' + e.target.classList[0] + '</h4>';
+
+*/
+// clciking position
+console.log(e.clientX);
+console.log(e.clientY);
+
+//check key press
+console.log(e.altKey);
+
+
+
+}
+
+//bubling and capturing
+
+//bubling
+
+document.getElementById('mypy1').addEventListener('click',
+    function(){
+        alert("you clicked white element");
+    } ,false);
+document.getElementById('myDiv1').addEventListener('click',
+    function(){
+        alert("you clicked the orange element");
+
+    },false);
+
+//capturing
+document.getElementById('mypy2').addEventListener('click',
+    function(){
+        alert("you clicked white element");
+    } ,true);
+document.getElementById('myDiv2').addEventListener('click',
+    function(){
+        alert("you clicked the orange element");
+
+    },true);
+    
+
+
+
