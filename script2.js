@@ -219,7 +219,7 @@ var btn = document.getElementById('box');
 //btn.addEventListener('mouseleave',typeofEvent1);
 
 //btn.addEventListener('mouseover',typeofEvent1);
-
+/*
 btn.addEventListener('mousemove',typeofEvent1);
 function typeofEvent1(e){
     console.log("Event type :" +e.type);
@@ -228,4 +228,16 @@ function typeofEvent1(e){
 
     document.body.style.backgroundColor = 'rgb('+e.offsetX+','+e.offsetY+','+e.offsetX+')';
 }
+*/
 
+//---Diferent types of events for Keyboard---
+
+var keyInput = document.querySelector('input[type="text"]');
+
+keyInput.addEventListener('keydown',typeofEvent2);
+
+function typeofEvent2(e){
+    console.log('Event type :'+e.type);
+    console.log('value :'+e.target.value);
+    document.getElementById('out').textContent = e.target.value;
+}
