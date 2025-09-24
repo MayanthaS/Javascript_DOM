@@ -118,3 +118,15 @@ function textChange(){
     alert("Mouse out");
     document.getElementById('c-btn').textContent ="Buy one";
 }
+
+
+// --parameterized function
+document.getElementById('i-btn').addEventListener('click',
+    function(){
+        changeListBack("Hello");
+    });
+
+function changeListBack(x){
+    document.getElementById('li-items').style.backgroundColor ='#ebca14';
+    document.getElementById('li-items').firstElementChild.textContent = x;
+}
