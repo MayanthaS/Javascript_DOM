@@ -208,12 +208,17 @@ document.getElementById('myDiv2').addEventListener('click',
 
 ///different type of events
 var btn = document.getElementById('t-btn');
+var btn = document.getElementById('box');
 //click event
  //btn.addEventListener('click',typeofEvent1);
 //double click event
  //btn.addEventListener('dbclick',typeofEvent1);
 //mousedown
-btn.addEventListener('mousedown',typeofEvent1);
+//btn.addEventListener('mousedown',typeofEvent1);
+btn.addEventListener('mouseenter',typeofEvent1);
+btn.addEventListener('mouseleave',typeofEvent1);
+btn.addEventListener('mousemove',typeofEvent1);
+btn.addEventListener('mouseover',typeofEvent1);
 
 function typeofEvent1(e){
     console.log("Event type :" +e.type);
