@@ -231,7 +231,7 @@ function typeofEvent1(e){
 */
 
 //---Diferent types of events for Keyboard---
-
+/*
 var keyInput = document.querySelector('input[type="text"]');
 
 //keyInput.addEventListener('keydown',typeofEvent2);
@@ -243,4 +243,26 @@ function typeofEvent2(e){
     console.log('Event type :'+e.type);
     console.log('value :'+e.target.value);
     document.getElementById('out').textContent = e.target.value;
+}
+    */
+
+
+//other diferent type of event
+//select
+var  select = document.querySelector('select');
+select.addEventListener('change',typeofEvent3);
+select.addEventListener('change',typeofEvent3);
+
+function typeofEvent3(e){
+    console.log("Event type :" +e.type);
+    console.log("value :" +e.target.value);
+}
+
+//form
+var form = document.querySelector('form');
+form.addEventListener('submit',typeofEvent4);
+
+function typeofEvent4(e){
+    e.preventDefault();
+    console.log("Event type :" +e.type);
 }
