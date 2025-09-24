@@ -234,8 +234,11 @@ function typeofEvent1(e){
 
 var keyInput = document.querySelector('input[type="text"]');
 
-keyInput.addEventListener('keydown',typeofEvent2);
-
+//keyInput.addEventListener('keydown',typeofEvent2);
+//keyInput.addEventListener('keyup',typeofEvent2);
+//keyInput.addEventListener('keypress',typeofEvent2);
+//keyInput.addEventListener('focus',typeofEvent2);
+keyInput.addEventListener('input',typeofEvent2);
 function typeofEvent2(e){
     console.log('Event type :'+e.type);
     console.log('value :'+e.target.value);
