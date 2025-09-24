@@ -45,7 +45,7 @@ itemList.lastElementChild.style.backgroundColor ='#ebca14';
 console.log(itemList.nextSibling); 
 */
 //--next sibling elemt
-
+/*
 console.log(itemList.nextElementSibling); 
 itemList.nextElementSibling.style.backgroundColor ='#ebca14';
 
@@ -56,3 +56,30 @@ console.log(itemList.previousSibling);
 
 console.log(itemList.previousElementSibling);
 itemList.previousElementSibling.style.backgroundColor =' #ebca14';
+*/
+
+
+//create element 
+
+//--create and element--
+var input = document.createElement('input');
+
+// add a class
+input.className = "test";
+
+// add an ID
+input.id = 'last';
+
+// add an attribute
+input.setAttribute('type','text');
+console.log(input);
+
+//-create a Div
+var newDiv = document.createElement('div');
+
+//create text node
+var newText = document.createTextNode('How are you!');
+
+//add text to div
+newDiv.appendChild(newText);
+console.log(newDiv);
