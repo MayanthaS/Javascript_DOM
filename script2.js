@@ -208,9 +208,12 @@ document.getElementById('myDiv2').addEventListener('click',
 
 ///different type of events
 var btn = document.getElementById('t-btn');
-btn.addEventListener('click',typeofEvent1);
-//btn.addEventListener('dbclick',typeofEvent1);
-
+//click event
+ //btn.addEventListener('click',typeofEvent1);
+//double click event
+ //btn.addEventListener('dbclick',typeofEvent1);
+//mousedown
+btn.addEventListener('mousedown',typeofEvent1);
 
 function typeofEvent1(e){
     console.log("Event type :" +e.type);
