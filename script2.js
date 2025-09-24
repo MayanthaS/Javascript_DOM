@@ -215,12 +215,15 @@ var btn = document.getElementById('box');
  //btn.addEventListener('dbclick',typeofEvent1);
 //mousedown
 //btn.addEventListener('mousedown',typeofEvent1);
-btn.addEventListener('mouseenter',typeofEvent1);
-btn.addEventListener('mouseleave',typeofEvent1);
-btn.addEventListener('mousemove',typeofEvent1);
-btn.addEventListener('mouseover',typeofEvent1);
+//btn.addEventListener('mouseenter',typeofEvent1);
+//btn.addEventListener('mouseleave',typeofEvent1);
 
+//btn.addEventListener('mouseover',typeofEvent1);
+
+btn.addEventListener('mousemove',typeofEvent1);
 function typeofEvent1(e){
     console.log("Event type :" +e.type);
+
+    document.querySelector('#box h2').textContent ='Mouse X :' + e.offsetX + ' | Mouse Y :'+e.offsetY;
 }
 
